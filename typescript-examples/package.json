@@ -1,0 +1,35 @@
+{
+  "name": "typescript-learning-examples",
+  "version": "1.0.0",
+  "description": "Comprehensive TypeScript learning examples and exercises",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "build-individual": "echo 'Build individual files as needed with: tsc <filename>.ts'",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "verify": "node verification/verify-setup.js",
+    "clean": "rm -rf dist",
+    "examples": "npm start",
+    "run-basic-types": "npx ts-node week1-foundations/basic-types/basic-types.ts",
+    "run-functions": "npx ts-node week1-foundations/functions/functions.ts",
+    "run-arrays-objects": "npx ts-node week1-foundations/arrays-objects/arrays-objects.ts",
+    "run-interfaces": "npx ts-node week2-intermediate/interfaces/interfaces.ts",
+    "run-type-aliases": "npx ts-node week2-intermediate/type-aliases/type-aliases.ts",
+    "run-generics": "npx ts-node week3-advanced/generics/generics.ts",
+    "run-comparison": "npx ts-node javascript-vs-typescript/comparison.ts"
+  },
+  "keywords": [
+    "typescript",
+    "learning",
+    "examples",
+    "tutorial"
+  ],
+  "author": "TypeScript Learning Track",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.0.0"
+  }
+}
