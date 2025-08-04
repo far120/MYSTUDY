@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1: Basic Utilities</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-3xl font-bold text-center mb-8">🛠️ Exercise 1: Basic Utilities Practice</h1>
+        
+        <!-- Exercise Instructions -->
+        <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8">
+            <h2 class="text-xl font-bold text-blue-800 mb-2">🎯 Your Mission</h2>
+            <p class="text-blue-700 mb-4">Practice basic Tailwind utilities by styling the components below. Follow the requirements for each section.</p>
+            <p class="text-blue-600 text-sm">⏱️ Estimated time: 15 minutes</p>
+        </div>
+
+        <!-- Section 1: Button Styling -->
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h3 class="text-lg font-semibold mb-4">1. Style These Buttons</h3>
+            <p class="text-gray-600 mb-4">Add Tailwind classes to make these buttons look professional.</p>
+            
+            <!-- 
+            🎯 TASK: Add classes to style these buttons
+            Requirements:
+            - Primary button: Blue background, white text, padding, rounded corners
+            - Secondary button: Gray background, dark text, padding, rounded corners  
+            - Danger button: Red background, white text, padding, rounded corners
+            -->
+            
+            <div class="space-y-4">
+                <!-- TODO: Style this as a primary button -->
+                <button class="">Primary Button</button>
+                
+                <!-- TODO: Style this as a secondary button -->
+                <button class="">Secondary Button</button>
+                
+                <!-- TODO: Style this as a danger button -->
+                <button class="">Danger Button</button>
+            </div>
+            
+            <!-- Solution (hidden initially) -->
+            <details class="mt-6">
+                <summary class="text-blue-600 cursor-pointer">💡 Show Solution</summary>
+                <div class="mt-4 bg-gray-50 p-4 rounded">
+                    <pre class="text-sm"><code><!-- Primary Button -->
+&lt;button class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600"&gt;Primary Button&lt;/button&gt;
+
+<!-- Secondary Button -->
+&lt;button class="bg-gray-300 text-gray-800 px-6 py-2 rounded hover:bg-gray-400"&gt;Secondary Button&lt;/button&gt;
+
+<!-- Danger Button -->
+&lt;button class="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600"&gt;Danger Button&lt;/button&gt;</code></pre>
+                </div>
+            </details>
+        </section>
+
+        <!-- Section 2: Text Styling -->
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h3 class="text-lg font-semibold mb-4">2. Typography Practice</h3>
+            <p class="text-gray-600 mb-4">Style this text content with appropriate typography classes.</p>
+            
+            <!-- 
+            🎯 TASK: Add typography classes
+            Requirements:
+            - Main heading: Large, bold, dark text
+            - Subheading: Medium size, semi-bold, gray text
+            - Paragraph: Normal size, readable line height, gray text
+            - Important text: Bold, different color
+            -->
+            
+            <div>
+                <!-- TODO: Style as main heading -->
+                <h1 class="">Welcome to Tailwind CSS</h1>
+                
+                <!-- TODO: Style as subheading -->
+                <h2 class="">Learn utility-first CSS framework</h2>
+                
+                <!-- TODO: Style as readable paragraph -->
+                <p class="">
+                    Tailwind CSS is a utility-first CSS framework that provides low-level utility classes 
+                    to build custom designs without ever leaving your HTML. This approach allows for 
+                    rapid development and easy maintenance.
+                </p>
+                
+                <!-- TODO: Style as important/highlighted text -->
+                <p class="">This text should stand out as important information!</p>
+            </div>
+            
+            <!-- Solution -->
+            <details class="mt-6">
+                <summary class="text-blue-600 cursor-pointer">💡 Show Solution</summary>
+                <div class="mt-4 bg-gray-50 p-4 rounded">
+                    <pre class="text-sm"><code>&lt;h1 class="text-3xl font-bold text-gray-800 mb-4"&gt;Welcome to Tailwind CSS&lt;/h1&gt;
+&lt;h2 class="text-xl font-semibold text-gray-600 mb-3"&gt;Learn utility-first CSS framework&lt;/h2&gt;
+&lt;p class="text-base leading-relaxed text-gray-700 mb-4"&gt;...&lt;/p&gt;
+&lt;p class="font-bold text-blue-600"&gt;This text should stand out as important information!&lt;/p&gt;</code></pre>
+                </div>
+            </details>
+        </section>
+
+        <!-- Section 3: Box Styling -->
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h3 class="text-lg font-semibold mb-4">3. Box and Spacing Practice</h3>
+            <p class="text-gray-600 mb-4">Create different styled boxes using background, padding, margin, and border utilities.</p>
+            
+            <!-- 
+            🎯 TASK: Style these boxes
+            Requirements:
+            - Info box: Light blue background, padding, rounded corners, border
+            - Warning box: Yellow background, padding, rounded corners, bold text
+            - Success box: Green background, white text, padding, rounded corners
+            -->
+            
+            <div class="space-y-4">
+                <!-- TODO: Style as info box -->
+                <div class="">
+                    <strong>Info:</strong> This is an informational message.
+                </div>
+                
+                <!-- TODO: Style as warning box -->
+                <div class="">
+                    <strong>Warning:</strong> Please pay attention to this message.
+                </div>
+                
+                <!-- TODO: Style as success box -->
+                <div class="">
+                    <strong>Success:</strong> Operation completed successfully!
+                </div>
+            </div>
+            
+            <!-- Solution -->
+            <details class="mt-6">
+                <summary class="text-blue-600 cursor-pointer">💡 Show Solution</summary>
+                <div class="mt-4 bg-gray-50 p-4 rounded">
+                    <pre class="text-sm"><code><!-- Info Box -->
+&lt;div class="bg-blue-100 border border-blue-300 text-blue-800 p-4 rounded-lg"&gt;...&lt;/div&gt;
+
+<!-- Warning Box -->
+&lt;div class="bg-yellow-100 border border-yellow-300 text-yellow-800 p-4 rounded-lg font-semibold"&gt;...&lt;/div&gt;
+
+<!-- Success Box -->
+&lt;div class="bg-green-500 text-white p-4 rounded-lg"&gt;...&lt;/div&gt;</code></pre>
+                </div>
+            </details>
+        </section>
+
+        <!-- Section 4: Simple Layout -->
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h3 class="text-lg font-semibold mb-4">4. Basic Layout Practice</h3>
+            <p class="text-gray-600 mb-4">Use flexbox utilities to create a simple navigation layout.</p>
+            
+            <!-- 
+            🎯 TASK: Create a horizontal navigation
+            Requirements:
+            - Container: Flex layout, space between elements, padding, background
+            - Logo: Bold text
+            - Navigation items: Horizontal list, proper spacing
+            -->
+            
+            <!-- TODO: Add flexbox and styling classes -->
+            <nav class="">
+                <!-- TODO: Style as logo -->
+                <div class="">MyLogo</div>
+                
+                <!-- TODO: Create horizontal navigation list -->
+                <ul class="">
+                    <li><a href="#" class="">Home</a></li>
+                    <li><a href="#" class="">About</a></li>
+                    <li><a href="#" class="">Services</a></li>
+                    <li><a href="#" class="">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Solution -->
+            <details class="mt-6">
+                <summary class="text-blue-600 cursor-pointer">💡 Show Solution</summary>
+                <div class="mt-4 bg-gray-50 p-4 rounded">
+                    <pre class="text-sm"><code>&lt;nav class="flex justify-between items-center p-4 bg-gray-800 text-white rounded-lg"&gt;
+    &lt;div class="text-xl font-bold"&gt;MyLogo&lt;/div&gt;
+    &lt;ul class="flex space-x-6"&gt;
+        &lt;li&gt;&lt;a href="#" class="hover:text-blue-300"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#" class="hover:text-blue-300"&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#" class="hover:text-blue-300"&gt;Services&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#" class="hover:text-blue-300"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+                </div>
+            </details>
+        </section>
+
+        <!-- Bonus Challenge -->
+        <section class="bg-gradient-to-r from-purple-500 to-pink-500 text-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-4">🌟 Bonus Challenge</h3>
+            <p class="mb-4">Create a simple card component with an image, title, description, and button.</p>
+            
+            <!-- 
+            🎯 BONUS TASK: Create a complete card
+            Requirements:
+            - Card container: White background, shadow, rounded corners
+            - Image: Full width, specific height, proper scaling
+            - Content area: Proper padding
+            - Title: Large, bold text
+            - Description: Smaller, gray text
+            - Button: Call-to-action styling
+            -->
+            
+            <div class="bg-white text-gray-800 rounded-lg overflow-hidden">
+                <!-- TODO: Complete this card component -->
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Beautiful landscape" class="">
+                <div class="">
+                    <h4 class="">Mountain Adventure</h4>
+                    <p class="">Experience breathtaking views and fresh mountain air on this guided hiking tour.</p>
+                    <button class="">Book Now</button>
+                </div>
+            </div>
+            
+            <!-- Bonus Solution -->
+            <details class="mt-6">
+                <summary class="text-white cursor-pointer">💡 Show Bonus Solution</summary>
+                <div class="mt-4 bg-white bg-opacity-20 p-4 rounded">
+                    <pre class="text-sm text-white"><code>&lt;div class="bg-white text-gray-800 rounded-lg overflow-hidden shadow-lg max-w-sm"&gt;
+    &lt;img src="..." alt="..." class="w-full h-48 object-cover"&gt;
+    &lt;div class="p-6"&gt;
+        &lt;h4 class="text-xl font-bold mb-2"&gt;Mountain Adventure&lt;/h4&gt;
+        &lt;p class="text-gray-600 mb-4"&gt;Experience breathtaking views...&lt;/p&gt;
+        &lt;button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"&gt;Book Now&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </details>
+        </section>
+
+        <!-- Exercise Complete -->
+        <div class="text-center mt-12">
+            <div class="bg-green-100 border border-green-300 text-green-800 p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-2">🎉 Exercise 1 Complete!</h3>
+                <p class="mb-4">Great job practicing basic Tailwind utilities! You've learned:</p>
+                <ul class="text-left max-w-md mx-auto mb-4">
+                    <li>✅ Button styling with colors and padding</li>
+                    <li>✅ Typography classes for different text elements</li>
+                    <li>✅ Background, border, and spacing utilities</li>
+                    <li>✅ Basic flexbox layout</li>
+                    <li>✅ Building simple components</li>
+                </ul>
+                <p class="font-semibold">Next up: Exercise 2 - Color System Mastery!</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
